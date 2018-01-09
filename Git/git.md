@@ -31,6 +31,16 @@
 * $ git commit -m '删除了target'  提交,添加操作说明
 * $ git push -u origin master 最后再将本次更改更新到github项目上去
 
+---
+**创建.gitignore文件**
+
+windows下创建.gitignore文件会提示“必须键入文件名”，所以可以考虑使用一下步骤：
+
+    1. 创建文本文件命名为gitignore.txt       
+    2. 打开文件，添加要过滤的规则然后保存并关闭文件       
+    3. 按住Shift键在gitignore.txt所在文件夹右键“在此处打开命令窗口”  
+    4. 在命令行中重命名：ren gitignore.txt .gitignore
+
 为了避免出现上面的情况可以在要上传的同级目录下创建[.gitignore](http://blog.csdn.net/gjy211/article/details/51607347)文件
 上面的笔记部分参考了下面三位大牛的博客，如果有冒犯您请及时联系我会及时处理。
 
