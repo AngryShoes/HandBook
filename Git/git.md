@@ -47,7 +47,8 @@ windows下创建.gitignore文件会提示“必须键入文件名”，所以可
     4. 在命令行中重命名：ren gitignore.txt .gitignore
 
 为了避免出现上面的情况可以在要上传的同级目录下创建[.gitignore](http://blog.csdn.net/gjy211/article/details/51607347)文件
-上面的笔记部分参考了下面三位大牛的博客，如果有冒犯您请及时联系我会及时处理。
+
+[Git使用详细教程](https://blog.csdn.net/youzhouliu/article/details/78952453)
 
 [用法指南](http://www.cnblogs.com/specter45/p/github.html)
 
