@@ -6,6 +6,7 @@
     ssh -keygen -t rsa -C "XXXXXXXXX@qq.com"引号内需要改成你在注册GitHub的时候绑定的邮箱账号创建的秘钥一般在 C:\Users\Administrator\.ssh 文件夹下
 
     2. 文本编辑器打开id_rsa.pub文件，把秘钥复制到github账户的SSH keys页面里点击添加,title 是让你给你的密匙起一个名字，根据个人喜好，什么名字都可以
+    ![addsshKey](https://github.com/AngryShoes/HandBook/blob/master/Git/images/addSSHKey.png)
 
     3. 输入ssh -T git@github.com来检查是否成功绑定。第一次绑定的时候输入上边的代码之后会提示是否continue，在输入yes后如果出现了：You've successfully authenticated, but GitHub does not provide shell access 。
     那就说明，已经成功连上了GitHub。接下来还需要简单的配置账户信息。
