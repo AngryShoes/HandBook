@@ -1,5 +1,24 @@
 ## Git guide
----
+
+
+##### 创建git账号之后的配置
+    1. 首先要在本地创建一个ssh key 就是你现在需要在你电脑上获得一个秘钥
+    ssh -keygen -t rsa -C "XXXXXXXXX@qq.com"引号内需要改成你在注册GitHub的时候绑定的邮箱账号创建的秘钥一般在 C:\Users\Administrator\.ssh 文件夹下
+
+    2. 文本编辑器打开id_rsa.pub文件，把秘钥复制到github账户的SSH keys页面里点击添加,title 是让你给你的密匙起一个名字，根据个人喜好，什么名字都可以
+
+    3. 输入ssh -T git@github.com来检查是否成功绑定。第一次绑定的时候输入上边的代码之后会提示是否continue，在输入yes后如果出现了：You've successfully authenticated, but GitHub does not provide shell access 。
+    那就说明，已经成功连上了GitHub。接下来还需要简单的配置账户信息。
+
+    4. git config --global user.name "your name"
+     git config --global user.email "youremail@youremail.com"
+     name最好和GitHub上边的一样，email是一定要是注册GitHub的那个邮箱地址
+
+    5. 创建库 克隆库
+      git clone git@github.com:AngryShoes/HandBook.git
+
+##### 管理本地项目文件
+
     git init //把这个目录变成Git可以管理的仓库
     git add README.md //文件添加到仓库
     git add . //不但可以跟单一文件，还可以跟通配符，更可以跟目录。一个点就把当前目录下所有未追踪的文件全部add了 
@@ -7,7 +26,7 @@
     git remote add origin git@github.com:wangjiax9/practice.git //关联远程仓库  
     git push -u origin master //把本地库的所有内容推送到远程库上
  
-  For example:
+    For example:
     
     1.git init
 
@@ -19,7 +38,7 @@
 
     5.git push -u origin master
 
-或者新建仓库同时添加README.md 和.gitignore,然后在本地git clone [repository name],添加要上传的文件
+    或者新建仓库同时添加README.md 和.gitignore,然后在本地git clone [repository name],添加要上传的文件
 
 ---
 * 如果本地文件有修改再上传，由git status 查看哪些文件哪些内容变动，然后在git add [要上传的文件]
