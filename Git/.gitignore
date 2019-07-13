@@ -22,5 +22,6 @@
   *.user 
   *.userosscache 
   *.sln.docstates 
+  *.bak 
 
 
