@@ -73,6 +73,8 @@ windows下创建.gitignore文件会提示“必须键入文件名”，所以可
 
 [Git使用详细教程](https://blog.csdn.net/youzhouliu/article/details/78952453)
 
+[Git 练习](https://learngitbranching.js.org/)
+
 [用法指南](http://www.cnblogs.com/specter45/p/github.html)
 
 [删除文件](http://blog.csdn.net/wudinaniya/article/details/77508229)
